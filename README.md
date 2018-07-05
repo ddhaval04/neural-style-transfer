@@ -19,30 +19,18 @@ scipy
 
 # Usage
 
-- To use the pre-trained model:
+- To run the script:
 ```
-To run the XGBoost model: (submitted to the competition)
-
-python -pt xg script.py
+python script.py --content <content file> --styles <style file>
 ```
-
-- To train your model from scratch:
-```
-To train the XGBoost model: (submitted to the competition)
-
-python xg script.py
-
-To train the Neural Network :
-
-python nn script.py
-```
-
-### To have a look at the data exploration, please refer the `Scripts/Zillow_Exploration.ipynb` notebook.
 
 # Results:
 
-Submissions were evaluated on Mean Absolute Error between the predicted log-error and the actual log-error. The MAE obtained by my script is `0.0658257` and was ranked in **Top 20%** on the public and private leaderboard.
+## Content Image:
+![Dog-content](https://github.com/ddhaval04/neural-style-transfer/raw/master/content/dog.jpg)
 
-# Credits:
+## Style Image:
+![Dog-content](https://github.com/ddhaval04/neural-style-transfer/raw/master/style/starry-night.jpg.jpg)
 
-- Kaggle community
+## Stylized Image:
+![Dog-content](https://github.com/ddhaval04/neural-style-transfer/raw/master/results/6.jpg)
