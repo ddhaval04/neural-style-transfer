@@ -1,12 +1,11 @@
 from __future__ import print_function
-import time
+
 import PIL
 from PIL import Image
+
 import numpy as np
 import matplotlib.pyplot as plt
-from keras import backend
-from keras.models import Model
-from keras.applications.vgg16 import VGG16
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -14,10 +13,13 @@ from torch.optim import lr_scheduler
 from torch.autograd import Variable
 import torchvision
 from torchvision import models, transforms
+
 import time
 import sys
 import os
 import copy
+import argparse
+
 from scipy.optimize import fmin_l_bfgs_b
 from scipy.misc import imsave
 
@@ -149,10 +151,22 @@ def save_image(input):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--content',
+            dest='content', help='content image',
+            metavar='CONTENT', required=True)
+    parser.add_argument('--styles',
+            dest='styles',
+            help='style images',
+            metavar='STYLE', required=True)
+    options = parser.parse_args()
+
+    content_path = options.content
+    style_path = options.styles
+
     use_cuda = torch.cuda.is_available()
     model, dtype = get_model(use_cuda)
-    content_path = "./content/dog.jpg"
-    style_path = "./style/wave.jpg"
+    
     style_img = image_loader(style_path, use_cuda).type(dtype)
     content_img = image_loader(content_path, use_cuda).type(dtype)
     combo_image = Variable(content_img.data.clone())
