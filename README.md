@@ -27,10 +27,16 @@ python script.py --content <content file> --styles <style file>
 # Results:
 
 ## Content Image:
-![Dog-content](https://github.com/ddhaval04/neural-style-transfer/raw/master/content/dog.jpg)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/content/dog.jpg">
+</p>
 
 ## Style Image:
-![Dog-content](https://github.com/ddhaval04/neural-style-transfer/raw/master/style/starry-night.jpg.jpg)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/style/starry-night.jpg">
+</p>
 
 ## Stylized Image:
-![Dog-content](https://github.com/ddhaval04/neural-style-transfer/raw/master/results/6.jpg)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/results/6.jpg">
+</p>
