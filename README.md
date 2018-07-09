@@ -26,17 +26,14 @@ python script.py --content <content file> --styles <style file>
 
 # Results:
 
-## Content Image:
-<p align="left">
-  <img width="460" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/content/dog.jpg">
+<p>
+  <img width="260" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/content/dog.jpg" align="left">
+  <img width="260" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/style/starry-night.jpg" align="center">
+  <img width="260" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/results/6.jpg" align="right">
 </p>
 
-## Style Image:
-<p align="left">
-  <img width="460" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/style/starry-night.jpg">
-</p>
-
-## Stylized Image:
-<p align="left">
-  <img width="460" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/results/6.jpg">
+<p>
+  <img width="260" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/content/bitch.jpg" align="left">
+  <img width="260" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/style/tears.jpg" align="center">
+  <img width="260" height="300" src="https://github.com/ddhaval04/neural-style-transfer/raw/master/results/b-output.png" align="right">
 </p>
